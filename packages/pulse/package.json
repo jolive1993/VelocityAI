@@ -1,0 +1,7 @@
+{
+  "name": "@velocity/pulse",
+  "version": "1.0.0",
+  "description": "Pulse — Velocity's analytics engine. Tracks every interaction at 10Hz.",
+  "main": "src/index.js",
+  "type": "module"
+}
