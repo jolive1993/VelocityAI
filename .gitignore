@@ -30,6 +30,15 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# user data (plaintext profiles)
+/public/user-data
+
+# hype meter submissions (contains IPs for abuse prevention)
+/data
+
+# pulse analytics (user behavior data)
+/public/analytics
+
 # env files (can opt-in for committing if needed)
 .env*
 
