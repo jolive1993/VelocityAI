@@ -7,6 +7,7 @@ import {
   Footer,
   Hero,
   Stats,
+  VervoAd,
 } from "@/components/home";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Stats />
         <Features />
+        <VervoAd />
         <CTA />
         <Footer />
       </main>
