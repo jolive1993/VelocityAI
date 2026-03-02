@@ -1,0 +1,185 @@
+<style>
+.hero-section {
+  margin-bottom: 8rem;
+}
+.hero-badge {
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #a1a1aa;
+  opacity: 0;
+  animation: fade-up 0.6s ease-out 200ms forwards;
+}
+.hero-dot-outer {
+  position: relative;
+  display: flex;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+.hero-dot-ping {
+  position: absolute;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 9999px;
+  background-color: #22d3ee;
+  opacity: 0.75;
+  animation: hero-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes hero-ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.hero-dot-inner {
+  position: relative;
+  display: inline-flex;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+  background-color: #06b6d4;
+}
+.hero-title {
+  margin-bottom: 1.5rem;
+  max-width: 56rem;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: white;
+  opacity: 0;
+  animation: fade-up 0.6s ease-out 300ms forwards;
+  font-family: var(--font-syne), sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.hero-line {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.hero-letter {
+  display: inline-flex;
+}
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 3.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+}
+.hero-title-accent {
+  background: linear-gradient(to right, #22d3ee, #67e8f9, #2dd4bf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero-description {
+  margin-bottom: 3rem;
+  max-width: 42rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #a1a1aa;
+  opacity: 0;
+  animation: fade-up 0.6s ease-out 400ms forwards;
+}
+@media (min-width: 640px) {
+  .hero-description {
+    font-size: 1.25rem;
+  }
+}
+.hero-description-highlight {
+  color: #d4d4d8;
+}
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  opacity: 0;
+  animation: fade-up 0.6s ease-out 500ms forwards;
+}
+.hero-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background-color: #06b6d4;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: black;
+  transition: all 0.15s ease;
+}
+.hero-cta-primary:hover {
+  background-color: #22d3ee;
+  box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.25);
+}
+.hero-cta-primary svg {
+  height: 1rem;
+  width: 1rem;
+  transition: transform 0.15s ease;
+}
+.hero-cta-primary:hover svg {
+  transform: translateX(2px);
+}
+.hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d4d4d8;
+  transition: color 0.15s, border-color 0.15s, background-color 0.15s;
+}
+.hero-cta-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+</style>
+<section class="hero-section">
+  <div class="hero-badge">
+    <span class="hero-dot-outer">
+      <span class="hero-dot-ping"></span>
+      <span class="hero-dot-inner"></span>
+    </span>
+    Built for speed. Engineered for excellence.
+  </div>
+  <h1 class="hero-title">
+    <span class="hero-line"><span class="hero-letter">F</span><span class="hero-letter">a</span><span class="hero-letter">s</span><span class="hero-letter">t</span><span class="hero-letter">.</span><span class="hero-letter"> </span><span class="hero-letter">M</span><span class="hero-letter">o</span><span class="hero-letter">d</span><span class="hero-letter">e</span><span class="hero-letter">r</span><span class="hero-letter">n</span><span class="hero-letter">.</span></span>
+    <span class="hero-title-accent hero-line"><span class="hero-letter">E</span><span class="hero-letter">x</span><span class="hero-letter">p</span><span class="hero-letter">e</span><span class="hero-letter">r</span><span class="hero-letter">t</span><span class="hero-letter">l</span><span class="hero-letter">y</span><span class="hero-letter"> </span><span class="hero-letter">c</span><span class="hero-letter">r</span><span class="hero-letter">a</span><span class="hero-letter">f</span><span class="hero-letter">t</span><span class="hero-letter">e</span><span class="hero-letter">d</span><span class="hero-letter">.</span></span>
+  </h1>
+  <p class="hero-description">
+    Every pixel placed with intention. Every interaction tuned for delight.
+    This isn't just a website—it's a statement that modern web experiences can be
+    <span class="hero-description-highlight">blazingly fast</span>,
+    <span class="hero-description-highlight">visually stunning</span>,
+    and
+    <span class="hero-description-highlight">obsessively polished</span>.
+  </p>
+  <div class="hero-ctas">
+    <a href="#features" class="hero-cta-primary">
+      See the magic
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      </svg>
+    </a>
+    <a href="#stats" class="hero-cta-secondary">
+      View benchmarks
+    </a>
+  </div>
+</section>
